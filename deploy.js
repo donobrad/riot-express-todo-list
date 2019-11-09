@@ -23,7 +23,7 @@ function installPM2() {
 function transferProjectToRemote(failed, successful) {
   return ssh.putDirectory(
     '../deployment-handson-three',
-    '/home/ubuntu/deployment-handson-three-temp',
+    '/home/deployment-handson-three-temp',
     {
       recursive: true,
       concurrency: 1,
@@ -146,3 +146,4 @@ function sshConnect() {
 }
 
 main();
+
